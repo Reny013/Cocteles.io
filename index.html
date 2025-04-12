@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explorador de Cócteles 🍸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Explorador de Cócteles 🍹</h1>
+
+  <div class="buscador">
+    <label for="busqueda" class="visually-hidden">Buscar cóctel:</label>
+    <input type="text" id="busqueda" placeholder="Nombre o ingrediente">
+    <button onclick="buscarCoctel()">Buscar</button>
+    <button onclick="buscarAleatorio()">🍀 Aleatorio</button>
+  </div>
+
+  <div id="historial" class="historial"></div>
+  <button id="borrarHistorial" onclick="borrarHistorial()">🗑️ Borrar historial</button>
+
+  <div id="spinner" class="spinner" style="display:none;"></div>
+  <div id="resultado" class="resultado"></div>
+
+  <button id="limpiar" style="display:none;" onclick="limpiarResultados()">Nueva búsqueda</button>
+  <script src="script.js"></script>
+</body>
+</html>
